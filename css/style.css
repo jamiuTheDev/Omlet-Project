@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
 * {
@@ -15,6 +14,7 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
+    padding: 20px;
 }
 
 h3, p, li, table{
@@ -37,7 +37,7 @@ h3 {
 }
 
 img {
-    max-width: 450px;
+    max-width: 100%;
     border-radius: 15px;
 }
 
@@ -47,6 +47,8 @@ img {
     border-radius: 10px;
     margin-top: 60px;
     margin-bottom: 60px;
+    width: 100%;
+    max-width: 450px;
 }
 
 ol, li {
@@ -55,7 +57,7 @@ ol, li {
 
 
 .card-content{
-    max-width: 450px;
+    max-width: 100%;
 }
 
 .card-list{
@@ -77,8 +79,6 @@ ol, li {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-
-
 
 table{
     width: 100%;
@@ -120,28 +120,60 @@ table .brown{
     margin-bottom: 25px;
 }
 
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
 
+    .card {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 15px;
+    }
 
+    .card-list {
+        padding: 15px;
+        margin-top: 15px;
+    }
 
+    h1, h2 {
+        font-size: 1.5rem;
+    }
 
+    h3 {
+        font-size: 1.2rem;
+    }
 
+    p, li, table {
+        font-size: 0.9rem;
+    }
+}
 
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+    }
 
+    .card {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 10px;
+    }
 
+    .card-list {
+        padding: 10px;
+        margin-top: 10px;
+    }
 
+    h1, h2 {
+        font-size: 1.2rem;
+    }
 
+    h3 {
+        font-size: 1rem;
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    p, li, table {
+        font-size: 0.8rem;
+    }
+}
